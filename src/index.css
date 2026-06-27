@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Ultra-Premium Custom Styles */
+@layer components {
+  /* Luxury Range Input Styling */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.5);
+    transition: all 0.2s ease;
+  }
+
+  input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.8), 0 0 30px rgba(139, 92, 246, 0.4);
+    transform: scale(1.2);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.5);
+    transition: all 0.2s ease;
+  }
+
+  input[type="range"]::-moz-range-thumb:hover {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.8), 0 0 30px rgba(139, 92, 246, 0.4);
+    transform: scale(1.2);
+  }
+
+  /* Smooth scrollbar for entire document */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Text selection gradient */
+  ::selection {
+    background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
+    color: white;
+  }
+}
